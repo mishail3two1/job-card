@@ -1,0 +1,149 @@
+:root {
+  --color-primary: #1a73c8;
+  --color-text: #1c1c1c;
+  --color-muted: #8a8a8a;
+  --color-icon: #b5b5b5;
+  --color-tag-bg: #e9f1f8;
+  --color-page-bg: #f2f2f2;
+  --color-card-bg: #ffffff;
+ 
+  --font-main: "Roboto", Arial, sans-serif;
+}
+ 
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  margin: 0;
+}
+ 
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--color-page-bg);
+  font-family: var(--font-main);
+}
+ 
+.job-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 29px;
+  background-color: var(--color-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+ 
+.job-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+ 
+.job-card__logo {
+  position: relative;
+  width: 52px;
+  height: 52px;
+}
+ 
+.job-card__logo-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+ 
+.job-card__verified {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  transform: translateX(50%);
+}
+ 
+.job-card__bookmark {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  opacity: 0.7;
+}
+ 
+.job-card__bookmark:hover,
+.job-card__bookmark:focus-visible {
+  opacity: 1;
+}
+ 
+.job-card__bookmark--active {
+  opacity: 1;
+}
+ 
+.job-card__bookmark-icon {
+  display: block;
+}
+ 
+.job-card__title {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+ 
+.job-card__company {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+ 
+.job-card__location {
+  margin: 0 0 16px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+ 
+.job-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+ 
+.job-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--color-muted);
+}
+ 
+.job-card__date::after {
+  content: "|";
+  margin-left: 6px;
+}
+ 
+.job-card__applicants {
+  font-weight: 500;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+ 
+.job-card__applicants:hover {
+  text-decoration: underline;
+}
+ 
+.tag {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-tag-bg);
+  border-radius: 20px;
+}
