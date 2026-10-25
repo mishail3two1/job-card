@@ -1,11 +1,12 @@
 :root {
-  --color-primary: #1a73c8;
   --color-text: #1c1c1c;
+  --color-primary: #0A66C2;
   --color-muted: #8a8a8a;
-  --color-icon: #b5b5b5;
   --color-tag-bg: #e9f1f8;
   --color-page-bg: #f2f2f2;
   --color-card-bg: #ffffff;
+  --color-tag-text: #0A66C2;
+  
  
   --font-main: "Roboto", Arial, sans-serif;
 }
@@ -40,7 +41,7 @@ body {
 .job-card__top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 16px;
 }
  
@@ -88,7 +89,7 @@ body {
  
 .job-card__title {
   margin: 0 0 8px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--color-primary);
@@ -96,14 +97,14 @@ body {
  
 .job-card__company {
   margin: 0 0 8px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--color-text);
 }
  
 .job-card__location {
   margin: 0 0 16px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--color-muted);
 }
@@ -121,7 +122,9 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 12px;
+  padding: 0 10px 1px;
+  font-size: 10px;
+  line-height: 26px;
   color: var(--color-muted);
 }
  
@@ -143,7 +146,7 @@ body {
 .tag {
   padding: 8px 16px;
   font-size: 14px;
-  color: var(--color-text);
+  color: var(--color-tag-text);
   background-color: var(--color-tag-bg);
   border-radius: 20px;
 }
